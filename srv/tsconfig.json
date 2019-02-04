@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "noResolve": false,
+    "module": "commonjs",
+    "target": "es2015",
+    "lib": ["es2018"],
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "../dist"
+  },
+  "files": ["./index.ts"]
+}

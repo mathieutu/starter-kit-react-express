@@ -1,0 +1,14 @@
+{
+  "extends": ["tslint-config-airbnb", "tslint-react"],
+  "rules": {
+    "semicolon": [true, "never"],
+    "ordered-imports": true,
+    "max-line-length": [true, 200],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
+    "align": [ true, "parameters" ],
+    "import-name": false,
+    "prefer-template": false,
+    "ter-arrow-parens": false,
+    "jsx-boolean-value": false
+  }
+}
