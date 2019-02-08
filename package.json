@@ -5,8 +5,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.4",
-    "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",
     "serve-my-app": "*"
   },
@@ -14,12 +14,11 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "express": "serve-my-app --watch --srv=dist",
+    "express": "serve-my-app --watch",
     "express:run": "NODE_ENV=production serve-my-app --srv=dist",
     "build": " npm run build:src && npm run build:srv",
     "build:src": "rm -rf build && react-scripts build",
     "build:srv": "rm -rf dist && tsc -p srv",
-    "watch:srv": "npm run build:srv -- -w",
     "lint": "tslint --project ."
   },
   "eslintConfig": {

@@ -1,9 +1,9 @@
 import { Express, json } from 'express'
 
 export default (app: Express) => {
-  app.use(json());
+  app.use(json())
 
   app.get('/data', (req, res) => {
-    res.json({hello: 'world!'});
-  });
-};
+    res.json({ hello: 'world!' })
+  })
+}
