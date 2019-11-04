@@ -8,18 +8,18 @@
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",
-    "serve-my-app": "*"
+    "serve-my-app": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "express": "serve-my-app --watch",
-    "express:run": "NODE_ENV=production serve-my-app --srv=dist",
     "build": " npm run build:src && npm run build:srv",
     "build:src": "rm -rf build && react-scripts build",
     "build:srv": "rm -rf dist && tsc -p srv",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "sma:watch": "serve-my-app --srv=srv --proxify --watch",
+    "sma": "serve-my-app --srv=srv --src=build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,7 +37,7 @@
     "@types/react": "16.8.1",
     "@types/react-dom": "16.0.11",
     "@types/react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.3",
+    "react-scripts": "2.1.8",
     "tslint": "^5.12.1",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-react": "^3.6.0",
